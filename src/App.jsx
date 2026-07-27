@@ -77,7 +77,7 @@ const App = () => {
         <div className='flex flex-wrap items-start justify-start gap-5 mt-5 overflow-auto no-scrollbar'>
           {task.map((elem, idx) => {
             return (
-              <div key={idx} className='relative h-52 w-38 rounded-2xl bg-white text-black pt-7 pb-14 px-4 bg-[url("./assets/notesBg.png")] bg-cover '>
+              <div key={idx} className='relative h-52 w-38 rounded-2xl bg-white text-black pt-7 pb-14 px-4 bg-[url("./assets/notesBG.png")] bg-cover '>
                 <div className='overflow-y-auto no-scrollbar pr-1 h-full'>
                   <h3 className='text-lg font-bold break-words'>{elem.title}</h3>
                   <p className='fit leading-light text-sm font-medium text-gray-600 break-words'>{elem.details}</p>
