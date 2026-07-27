@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import notesImg from './assets/image.png'
-import notesBgImg from './assets/notesBg.png'
+import notesBgImg from './assets/notesBG.png'
 import { X } from 'lucide-react';
 
 
