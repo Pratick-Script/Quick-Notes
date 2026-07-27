@@ -18,11 +18,6 @@ A simple and responsive note-taking application built with **React**, **Vite**, 
 ## 📸 Screenshot
 
 > ![alt text](image.png)
-
-Example:
-
-![Quick Notes Screenshot](./src/assets/Notess.png)
-
 ---
 
 ## 🛠️ Tech Stack
