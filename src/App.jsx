@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import notesImg from './assets/image.png'
 import notesBgImg from './assets/notesBG.png'
 import { X } from 'lucide-react';
+
 
 
 const App = () => {
@@ -10,7 +11,14 @@ const App = () => {
   const [details, setDetails] = useState("")
 
 
-  const [task, setTask] = useState([])
+  const [task, setTask] = useState(() => {
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(task));
+  }, [task]);
 
   const submitHandler = (e) => {
     e.preventDefault();
